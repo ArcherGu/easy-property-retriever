@@ -4,7 +4,12 @@
     "description": "A little tool used to get object properties, taken from MDN.",
     "main": "index.js",
     "source": "src/index.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
     "scripts": {
+        "build": "rimraf dist && rollup -c && terser dist/easy-property-retriever.js -c -m --comments -o dist/easy-property-retriever.min.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
@@ -14,5 +19,26 @@
         "typescript"
     ],
     "author": "ArcherGu",
-    "license": "MIT"
+    "license": "MIT",
+    "homepage": "https://github.com/ArcherGu/easy-property-retriever",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ArcherGu/easy-property-retriever.git"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.13.1",
+        "@babel/preset-env": "^7.13.5",
+        "@rollup/plugin-babel": "^5.3.0",
+        "@rollup/plugin-typescript": "^8.2.0",
+        "@types/jest": "^26.0.20",
+        "jest": "^26.6.3",
+        "prettier": "^2.2.1",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.39.1",
+        "terser": "^5.6.0",
+        "ts-jest": "^26.5.2",
+        "tslint": "^6.1.3",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^4.2.2"
+    }
 }
