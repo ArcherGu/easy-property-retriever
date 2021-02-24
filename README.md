@@ -4,4 +4,4 @@ easy-property-retriever is a little tool used to get object properties. this lib
 
 ## License
 
-The code in this project is licensed under [MIT license](https://github.com/ArcherGu/quick-event/blob/main/LICENSE).
+The code in this project is licensed under [MIT license](https://github.com/ArcherGu/easy-property-retriever/blob/main/LICENSE).

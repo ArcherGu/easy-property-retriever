@@ -1,0 +1,1 @@
+import EasyPropertyRetriever from "../dist/easy-property-retriever";

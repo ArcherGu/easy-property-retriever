@@ -1,10 +1,11 @@
 import { version } from './package.json';
 import typescript from '@rollup/plugin-typescript';
+import dts from "rollup-plugin-dts";
 import { getBabelOutputPlugin } from '@rollup/plugin-babel';
 import * as path from "path";
 
 const banner = `/*!
- * quick-event v${version}
+ * easy-property-retriever v${version}
  * https://github.com/ArcherGu/easy-property-retriever.git
  * @license MIT
  */`;
@@ -35,6 +36,15 @@ const config = [
                 allowAllFormats: true
             }),
         ]
-    }
+    },
+    {
+        input: 'src/index.ts',
+        output: {
+            file: 'dist/easy-property-retriever.d.ts',
+            format: 'es',
+            banner
+        },
+        plugins: [dts()],
+    },
 ];
 export default config;
