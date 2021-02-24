@@ -2,7 +2,10 @@
     "name": "easy-property-retriever",
     "version": "0.0.1",
     "description": "A little tool used to get object properties, taken from MDN.",
-    "main": "index.js",
+    "main": "dist/easy-property-retriever.common.js",
+    "module": "dist/easy-property-retriever.esm.js",
+    "unpkg": "dist/easy-property-retriever.js",
+    "types": "dist/easy-property-retriever.d.ts",
     "source": "src/index.ts",
     "files": [
         "dist",
