@@ -10,7 +10,7 @@
     ],
     "scripts": {
         "build": "rimraf dist && rollup -c && terser dist/easy-property-retriever.js -c -m --comments -o dist/easy-property-retriever.min.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest --verbose"
     },
     "keywords": [
         "object",
