@@ -1,36 +1,113 @@
+/**
+ * A little to get enumerable and nonenumerable properties
+ *
+ * @class EasyPropertyRetriever
+ */
 class EasyPropertyRetriever {
+    /**
+     * Get own enumerable properties, exclude properties on the prototype chain.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getOwnEnumerables(obj: object) {
         return this._getPropertyNames(obj, true, false, this._enumerable);
     }
 
+    /**
+     * Get own nonenumerable properties, exclude properties on the prototype chain.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getOwnNonenumerables(obj: object) {
         return this._getPropertyNames(obj, true, false, this._notEnumerable);
     }
 
+    /**
+     * Get own enumerable and nonenumerable properties, exclude properties on the prototype chain.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getOwnEnumerablesAndNonenumerables(obj: object) {
         return this._getPropertyNames(obj, true, false, this._enumerableAndNotEnumerable);
     }
 
+    /**
+     * Get enumerable properties on the prototype chain, exclude own properties.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getPrototypeEnumerables(obj: object) {
         return this._getPropertyNames(obj, false, true, this._enumerable);
     }
 
+    /**
+     * Get nonenumerable properties on the prototype chain, exclude own properties.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getPrototypeNonenumerables(obj: object) {
         return this._getPropertyNames(obj, false, true, this._notEnumerable);
     }
 
+    /**
+     * Get enumerable and nonenumerable properties on the prototype chain, exclude own properties.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getPrototypeEnumerablesAndNonenumerables(obj: object) {
         return this._getPropertyNames(obj, false, true, this._enumerableAndNotEnumerable);
     }
 
+    /**
+     * Get enumerable properties, include properties on the prototype chain.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getOwnAndPrototypeEnumerables(obj: object) {
         return this._getPropertyNames(obj, true, true, this._enumerable);
     }
 
+    /**
+     * Get nonenumerable properties, include properties on the prototype chain.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getOwnAndPrototypeNonenumerables(obj: object) {
         return this._getPropertyNames(obj, true, true, this._notEnumerable);
     }
 
+    /**
+     * Get enumerable and nonenumerable properties, include properties on the prototype chain.
+     *
+     * @static
+     * @param {object} obj
+     * @returns
+     * @memberof EasyPropertyRetriever
+     */
     public static getOwnAndPrototypeEnumerablesAndNonenumerables(obj: object) {
         return this._getPropertyNames(obj, true, true, this._enumerableAndNotEnumerable);
     }

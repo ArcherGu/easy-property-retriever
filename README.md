@@ -2,6 +2,10 @@
 
 easy-property-retriever is a little tool used to get object properties. this lib is taken from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties#obtaining_properties_by_enumerabilityownership).
 
+## Documentation
+
+[Documentation](https://archergu.github.io/quick-event/index.html)
+
 ## Run the unit tests
 
 ```bash
