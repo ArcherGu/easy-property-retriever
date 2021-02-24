@@ -4,7 +4,7 @@ easy-property-retriever is a little tool used to get object properties. this lib
 
 ## Documentation
 
-[Documentation](https://archergu.github.io/quick-event/index.html)
+[Documentation](https://archergu.github.io/easy-property-retriever/index.html)
 
 ## Run the unit tests
 
