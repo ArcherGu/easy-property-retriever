@@ -1,6 +1,6 @@
 {
     "name": "easy-property-retriever",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A little tool used to get object properties, taken from MDN.",
     "main": "dist/easy-property-retriever.common.js",
     "module": "dist/easy-property-retriever.esm.js",
